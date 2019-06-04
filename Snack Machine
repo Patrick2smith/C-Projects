@@ -1,0 +1,47 @@
+/******************************************************************************
+ C++ Snack Machine
+ 
+ Patrick Smith
+ 
+ 6/4/2019
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+
+
+void Menu()
+{
+  cout<<"Welcome to The Snack Shack"<<endl;
+  cout<<"Enter $1.00 to purchase a snack\n"<<endl;
+  cout<<"*******************************"<<endl;
+  cout<<"1) Snicker $1.00\n2) Twix $1.00\n3) Dorito's Nacho Cheese\n4) Cheetos Flamin'Hot "<<endl;
+  cout<<"*******************************"<<endl;
+  cout<<"Make a Selection "<<endl;
+    
+};
+
+int main()
+{
+   Menu();
+   int selection;
+   cin>>selection;
+   switch(selection) {
+      case 1:
+        cout<<"You have selected a Snicker\nEnter $1.00"<<endl;
+        break;
+      case 2:
+        cout<<"You have selected a Twix\nEnter $1.00"<<endl;
+        break;
+      case 3:
+        cout<<"You have selected Dorito's\nEnter $1.00"<<endl;
+        break;
+      case 4:
+        cout<<"You have selected Cheetos\nEnter $1.00"<<endl;
+        break;
+      default:
+        cout<<"Make Another Selection "<<endl;
+    }
+    return 0;
+}
